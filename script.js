@@ -56,7 +56,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
   //when the player wins
   else if (guess === secretNumber) {
-    document.querySelector(`.message`).textContent = `🎉 Correct Number !!`;
+    document.querySelector(`.message`).textContent = `🎉 Correct Number Motu  !!`;
     document.querySelector(`.number`).textContent = secretNumber;
 
     if (score > highs) {
@@ -74,7 +74,7 @@ document.querySelector('.check').addEventListener('click', function () {
   // when input  is too high
   else if (guess > secretNumber) {
     if (score > 1) {
-      document.querySelector(`.message`).textContent = `📈 Too High!`;
+      document.querySelector(`.message`).textContent = `📈 Too High! baby`;
       score--;
       document.querySelector(`.score`).textContent = score;
     } else {
@@ -85,7 +85,7 @@ document.querySelector('.check').addEventListener('click', function () {
   // when input  is too low
   else if (guess < secretNumber) {
     if (score > 1) {
-      document.querySelector(`.message`).textContent = `📉 Too Low!`;
+      document.querySelector(`.message`).textContent = `📉 Too Low! baby`;
       score--;
       document.querySelector(`.score`).textContent = score;
     } else {
