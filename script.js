@@ -101,3 +101,10 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    init();
+  }
+});
+
